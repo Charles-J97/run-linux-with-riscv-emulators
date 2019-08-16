@@ -1,12 +1,12 @@
 # Run linux with riscv emulators
-Teach you how to run linux on riscv emulators in several ways `from scratch`. It includes the building of the whole process of running a linux kernel in qemu or spike and includes several ways so that you can choose one way you like to try. If you encounter some problems, you may also find the way to solve it.
+Teach you how to run linux on riscv emulators in several ways `from scratch`. It includes the building of the whole process of running a linux kernel in qemu or spike and includes several ways so that you can choose one way you like to try. 
 
 NOTICE THAT 1: All codes are only sutiable for `Ubuntu` and they have been successfully run in `Ubuntu 18.04(64 bit)`.
 NOTICE THAT 2: My linux account name is charles, so the user's address is `/home/charles`. The account name depends on you. Here is just the example.
 NOTICE THAT 3: All commands `make` can be added `-j $(nproc)`, like `make -j $(nproc)`, to make the porcess faster. For example, my computer has 8 CPUs, so it has 16 processes, actually and virtually. Then I can change the command `make` to `make -j16`. This will be faster.
 
 ## Preview
-Recently I found that there are many repositories about modules related to riscv emulators such as qemu or Spike, but as to how to run a linux kernel with qemu or spike from scratch there are less information. Maybe it is so fundamental that people have no interests writing the instructions, but these instructions are important to rookies who touch the linux or riscv newly. So if your boss or professor asks you to run the linux kernel on riscv emulator but you have no idea what to do, you may be helped by this repository.
+Recently I have found that there are many repositories about modules related to riscv emulators such as qemu or Spike, but as to how to run a linux kernel with qemu or spike from scratch there are less information. Maybe it is so fundamental that people have no interests writing the instructions, but these instructions are important to rookies who touch the linux or riscv newly.
 
 ## riscv-gnu-toolchain
 This is the RISC-V C and C++ cross-compiler. If you have finished installing it, you are able to use the Newlib cross-compiler or Linux cross-compiler to compile the program in your linux operating system.
@@ -19,7 +19,7 @@ $ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-d
 ```
 
 ### Getting the source
-Now supposed that you are in the /home/charles. Just run as the following.
+Now supposed that you are in the /home/charles. Just run the following commands.
 ```
 $ mkdir riscv
 $ cd riscv
