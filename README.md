@@ -23,7 +23,7 @@ Now supposed that you are in the /home/charles. Just run as the following.
 ```
 $ mkdir riscv
 $ cd riscv
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/riscv-gnu-toolchain
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/riscv-gnu-toolchain
 ```
 After doing that, you need adjust the environment variable PATH and RISCV.
 ```
@@ -60,7 +60,7 @@ $ sudo apt-get install build-essential git autotools texinfo bison flex libgmp-d
 
 ### Getting the source and make it
 ```
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/freedom-u-sdk
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/freedom-u-sdk
 $ cd freedom-u-sdk
 $ make -j $(nproc)
 ```
@@ -104,10 +104,10 @@ Let's get back the riscv folder and install some required folders.
 $ cd /home/charles/riscv
 $ mkdir riscv64
 $ cd riscv64
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/qemu
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/linux
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/riscv-pk
-$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/busybear-linux
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/qemu
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/linux
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/riscv-pk
+$ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/busybear-linux
 ```
 After doing that, there will be four folders in riscv64 folder: qemu, linux, riscv-pk and busybear-linux.
 * `qemu`: Its function is to build the qemu emulator to run the linux kernel.
