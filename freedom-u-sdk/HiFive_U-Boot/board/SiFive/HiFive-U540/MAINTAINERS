@@ -1,0 +1,6 @@
+HIFIVE-U540 BOARD
+M:	Padmarao Begari <Padmarao.Begari@microsemi.com>
+S:	Maintained
+F:	board/SiFive/HiFive-U540/
+F:	include/configs/HiFive-U540.h
+F:	configs/HiFive-U540_defconfig

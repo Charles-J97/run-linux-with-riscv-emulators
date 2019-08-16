@@ -1,0 +1,24 @@
+if TARGET_HIFIVE_U540
+
+config SYS_CPU
+	default "HiFive"
+
+config SYS_BOARD
+	default "HiFive-U540"
+
+config SYS_VENDOR
+	default "SiFive"
+
+config SYS_SOC
+	default "U540"
+
+config SYS_CONFIG_NAME
+	default "HiFive-U540"
+
+config ENV_SIZE
+	default 0x2000 if ENV_IS_IN_SPI_FLASH
+
+config ENV_OFFSET
+	default 0x140000 if ENV_IS_IN_SPI_FLASH
+
+endif
