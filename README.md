@@ -30,7 +30,7 @@ After doing that, you need adjust the environment variable PATH and RISCV. `PATH
 export PATH=$PATH:/home/charles/riscv/riscv-gnu-toolchain/bin
 export RISCV=/home/charles/riscv/riscv-gnu-toolchain
 ```
-NOTICE THAT: The way above to set the PATH and RISCV is `temporary`, which means every time starting your Ubuntu, you need to set them again. There are ways to set them permanently online. You can google them.
+NOTICE THAT: The way above to set the PATH and RISCV is `temporary`, which means every time starting your Ubuntu, you need to set them again. There are several ways to set them permanently online. You can google them.
 
 ### Installation
 ```
