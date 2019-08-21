@@ -91,7 +91,7 @@ Password: sifive
 When you can see `#` after input the username and password, you can use your own linux operating system. Notice you are now in `/root` in the mini-OS, you can use `pwd` and `ls` commands to get familiar with the mini-OS. To close the mini-OS, just input `poweroff`.
 
 ## The second way to run linux kernel
-Well, the first way is so simple and transparent that you are not able to know the whole process to build the mini-OS. But the second way can tell you the whole process.
+Well, the first way is so simple and transparent that you are not able to know the whole process to build the mini-OS. However, the second way can tell you the entire process.
 
 ### Prerequisites
 ```
