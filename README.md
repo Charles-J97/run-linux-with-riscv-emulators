@@ -3,7 +3,7 @@ Teach you how to run linux on riscv emulators in several ways `from scratch`. It
 
 NOTICE THAT 1: All codes are only sutiable for `Ubuntu` and they have been successfully run in `Ubuntu 18.04(64 bit)`.
 NOTICE THAT 2: My linux account name is charles, so the user's address is `/home/charles`. The account name depends on you. Here is just the example.
-NOTICE THAT 3: All commands `make` can be added `-j $(nproc)`, like `make -j $(nproc)`, to make the porcess faster. For example, my computer has 8 CPUs, so it has 16 processes, actually and virtually. Then I can change the command `make` to `make -j16`. This will be faster.
+NOTICE THAT 3: All commands make can be added -j $(nproc), like `make -j $(nproc)`, to make the porcess faster. For example, my computer has 8 CPUs, so it has 16 processes, actually and virtually. Then I can change the command `make` to `make -j16`. This will be faster.
 
 ## Preview
 Recently I have found that there are many repositories about modules related to riscv emulators such as qemu or Spike, but as to how to run a linux kernel with qemu or spike from scratch there are less information. Maybe it is so fundamental that people have no interests writing the instructions, but these instructions are important to rookies who touch the linux or riscv newly.
