@@ -25,7 +25,7 @@ $ mkdir riscv
 $ cd riscv
 $ git clone --recursive https://github.com/Charles-J97/run-linux-with-riscv-emulators/tree/master/riscv-gnu-toolchain
 ```
-After doing that, you need adjust the environment variable PATH and RISCV.
+After doing that, you need adjust the environment variable PATH and RISCV. `PATH` is used to determine the address of riscv cross compiler so that emualtor can use it. `RiSCV` is used in some scripts to determine the installation path.
 ```
 export PATH=$PATH:/home/charles/riscv/riscv-gnu-toolchain/bin
 export RISCV=/home/charles/riscv/riscv-gnu-toolchain
