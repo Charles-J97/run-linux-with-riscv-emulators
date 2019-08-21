@@ -39,7 +39,7 @@ $ ./configure --prefix=/home/charles/riscv/riscv-gnu-toolchain
 $ make newlib -j $(nproc)
 $ make linux -j $(nproc)
 ```
-The first `make newlib` aims to install the Newlib cross-compiler, the second `make linux` aims to install the linux cross-compiler. Now you can use this two cross-compiler. You can write a `HelloWorld.c` program in riscv folder and run:
+The first `make newlib` aims to install the Newlib cross-compiler, the second `make linux` aims to install the linux cross-compiler. Now you can use these two riscv cross compiler. You can write a `HelloWorld.c` program in `riscv` folder and run:
 ```
 $ riscv64-unknown-elf-gcc -o hello HelloWorld.c
 or
@@ -48,7 +48,7 @@ $ riscv64-unknown-linux-gnu-gcc -o hello HelloWorld.c
 Then you can get a new program called `hello` which can be run by qemu or spike to show `hello world`. You have installed the riscv-gnu-toolchain successfully so far. 
 
 ## The first way to run linux kernel -- freedom-u-sdk
-Let's go back to riscv folder.
+Let's go back to `riscv` folder.
 ```
 $ cd /home/charles/riscv
 ```
@@ -99,7 +99,7 @@ $ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-d
 ```
 
 ### Getting the source code
-Let's get back the riscv folder and install some required folders.
+Let's get back to `riscv` folder and install some required folders.
 ```
 $ cd /home/charles/riscv
 $ mkdir riscv64
@@ -151,7 +151,7 @@ mkdir build && cd build
 ../configure --enable-logo --host=riscv64-unknown-elf --with-payload=../../linux/vmlinux
 make -j $(nproc)
 ```
-Its function is to connect the bbl(Berkeley bootloader) with the vmlinux compiled just now. Then the vmlinux can be activated. But we still need the root filesystem to run the vmlinux.
+Its function is to connect the bbl(Berkeley bootloader) with the vmlinux compiled just now. Then the vmlinux can be activated. However, we still need the root filesystem to run the vmlinux.
 
 * busybear-linux
 ```
